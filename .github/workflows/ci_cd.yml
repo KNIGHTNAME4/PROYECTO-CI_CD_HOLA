@@ -36,7 +36,9 @@ jobs:
             -Dsonar.projectKey=FlaskFeedback
             -Dsonar.organization=TU_ORG
             -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                       # -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
   # CAP 2: Docker Build y Push
   docker:
