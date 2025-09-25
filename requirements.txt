@@ -1,0 +1,20 @@
+# Framework web
+Flask==2.3.3
+Jinja2==3.1.2
+
+# Servidor WSGI para producción
+gunicorn==21.2.0
+
+# HTTP requests
+requests==2.31.0
+
+# Testing
+pytest==7.4.0
+pytest-flask==1.2.0
+
+# Manejo de CSS/HTML si necesitas parsear o manipular
+beautifulsoup4==4.13.0
+lxml==4.9.3
+
+# Entornos virtuales y utilidades
+python-dotenv==1.0.0
