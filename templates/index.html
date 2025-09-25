@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask CI/CD con Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Continuous Feedback & CI/CD</h1>
+        <ul>
+        {% for item in data %}
+            <li>{{ item[1] }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
