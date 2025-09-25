@@ -1,3 +1,4 @@
+from flask.testing import FlaskClient
 import pytest
 from app import app
 
@@ -6,7 +7,7 @@ def client():
     app.config['TESTING'] = True
     return app.test_client()
 
-def test_index(client):
+def test_index(client: FlaskClient):
     """Prueba que la ruta principal responde correctamente"""
     rv = client.get('/')
     assert rv.status_code == 200

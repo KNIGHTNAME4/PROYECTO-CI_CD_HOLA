@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest -v tests/
+           python -m pytest -v tests/
 
       - name: SonarQube Scan
         uses: SonarSource/sonarcloud-github-action@v1
