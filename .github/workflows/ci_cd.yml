@@ -35,6 +35,10 @@ jobs:
         run: |
            python -m pytest -v tests/
 
+      - name: Install SonarScanner
+        run: |
+          npm install -g sonar-scanner
+
       - name: SonarQube Scan
         uses: SonarSource/sonarcloud-github-action@v1
         with:
@@ -44,7 +48,7 @@ jobs:
             -Dsonar.host.url=https://sonarcloud.io
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-                       # -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+          # -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
   # CAP 2: Docker Build y Push
   docker:
