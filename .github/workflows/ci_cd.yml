@@ -80,7 +80,7 @@ jobs:
         with:
           version: 'v1.28.0'
 
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f k8s/deployment.yaml
-          kubectl rollout status deployment/flask-deployment
+#      - name: Deploy to Kubernetes
+ #       run: |
+ #         kubectl apply -f k8s/deployment.yaml
+  #        kubectl rollout status deployment/flask-deployment
