@@ -43,7 +43,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           args: >
-            -Dsonar.projectKey=FlaskFeedback
+            -Dsonar.projectKey=tu-org
             -Dsonar.organization=TU_ORG
             -Dsonar.host.url=https://sonarcloud.io
         env:
