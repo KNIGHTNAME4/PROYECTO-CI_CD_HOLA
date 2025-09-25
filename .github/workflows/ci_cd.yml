@@ -67,9 +67,9 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t tu_usuario_flask_ci .
-          docker tag tu_usuario_flask_ci tu_usuario_flask_ci:version1.0
-          docker push tu_usuario_flask_ci:version1.0
+          docker build -t tu_usuario_flask_ci:v1 .
+          docker tag tu_usuario_flask_ci:v1 knight4444/tu_usuario_flask_ci:version1.0
+          docker push knight4444/tu_usuario_flask_ci:version1.0
 
   # CAP 3: Deploy en Kubernetes
   kubernetes:
